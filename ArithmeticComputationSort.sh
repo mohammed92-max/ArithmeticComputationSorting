@@ -28,5 +28,8 @@ do
 	ArithmeticArr[count++]+$[ArithmeticDict[$1]]
 done
 
-sortDesc= printf"\n $(ArithmeticArr[@]) | sort nr"
+sortDesc= printf"\n" $(ArithmeticArr[@]) | sort nr
+sortAsc= printf"\n" ${ArithmeticArr[@]} | sort c
+
 echo $sortDesc
+echo $sortAsc
