@@ -7,6 +7,9 @@ read -p "Enter 3rd number" c;
 z1=$(($a+$(($b*$c))));
 z2=$(($(($a*$b))+$c));
 z3=$(($c+$(($a/$b))));
+z4=$(($(($a%$b))+$c));
+
 echo $z1
 echo $z2
 echo $z3
+echo $z4
