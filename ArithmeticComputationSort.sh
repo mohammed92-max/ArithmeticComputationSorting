@@ -9,7 +9,7 @@ z2=$(($(($a*$b))+$c));
 z3=$(($c+$(($a/$b))));
 z4=$(($(($a%$b))+$c));
 
-declare -A dict
+declare dict
 
 dict[((count++))]="$z1"
 dict[((count++))]="$z2"
