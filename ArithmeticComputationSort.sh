@@ -21,3 +21,12 @@ echo $z1
 echo $z2
 echo $z3
 echo $z4
+
+count=0
+for i in ${ArithmeticDict[@]}
+do
+	ArithmeticArr[count++]+$[ArithmeticDict[$1]]
+done
+
+sortDesc= printf"\n $(ArithmeticArr[@]) | sort nr"
+echo $sortDesc
